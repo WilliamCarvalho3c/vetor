@@ -15,14 +15,14 @@ public class Programa {
 		Product[] vect = new Product[n];
 		
 		for(int i=0;i<vect.length;i++) {
-			sc.nextLine();//para consumir a quebra de linha~
+			sc.nextLine();
 			String nome = sc.nextLine();
 			double preco = sc.nextDouble();
-			vect[i] = new Product(nome, preco);//vect na posição [i] vai receber o objeto instanciado instanciado o produto
+			vect[i] = new Product(nome, preco);
 		}
 		double soma =0.0;
 		for(int i=0; i<vect.length; i++) {
-			soma += vect[i].getPreco();//para pegar o preço do vetor
+			soma += vect[i].getPreco();
 		}
 		
 		double media = soma / vect.length;//length é o tamanho do vetor
